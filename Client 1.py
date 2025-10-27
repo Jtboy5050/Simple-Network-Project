@@ -42,7 +42,7 @@ while True:
     print(client1Message, end='')
 
     # The check for if the server sent to enter a move
-    if b"Enter your move" in client1Message:
+    if "Enter your move" in client1Message:
         move = input("Your move (rock, paper, scissors, or quit): ").strip().lower()
 
         # Sends the move to the server
