@@ -31,7 +31,7 @@ client1.send(mode.encode())
 
 # Main loop to keep the client running and responding to server messages
 while True:
-    client1Message = client1.recv(1024).decode()
+    client1Message = client1.recv(1024)
     
     # If there isn't a message from the server, the program assumes a disconnection and ends the game
     if not client1Message:

@@ -25,9 +25,6 @@ print("Sucessfully connected to the server!")
 client2Message = client2.recv(1024).decode()
 print(client2Message, end='')
 
-# Checks to see what the opponent type is, then sends it to the server
-mode = input("Choose opponent (human/bot): ").strip().lower()
-client2.send(mode.encode())
 
 # Main loop to keep the client running and responding to server messages
 while True:
